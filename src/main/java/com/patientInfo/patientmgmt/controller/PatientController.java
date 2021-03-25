@@ -44,7 +44,7 @@ public class PatientController {
 		return patientService.getAllPatient();
 	}
 	
-	@GetMapping("/patient/{name}")
+	@GetMapping("/patient/name/{name}")
 	public PatientDto getAllPatientsByname(@PathVariable("name") String name) {
 		
 		log.info("Calling api to get patient by name");
